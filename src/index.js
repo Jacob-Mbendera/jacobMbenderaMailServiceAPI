@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import exp from 'constants';
+import serverless from 'serverless-http';
 
 dotenv.config();
 const app = express();
@@ -24,11 +24,15 @@ app.use(
   })
 );
 
+const router = express.Router();
+app.use('/.netlify/functions/api', router);
 app.get('/', (req, res) => {
-  res.send('JACOB MBENDERA MAIL SERVICE');
+  res.json({
+    Hello: 'Hi',
+  });
 });
 
-app.post('/contact', (req, res) => {
+router.post('/contact', (req, res) => {
   const { firstName, lastName, email, mobile } = req.body;
 
   const msg = {
@@ -59,3 +63,6 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, (req, res) => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+
+const handler = serverless(app);
+export default handler;
