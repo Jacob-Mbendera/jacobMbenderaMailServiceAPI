@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/contact', (req, res) => {
-  const { firstName, lastName, email, mobile } = req.body;
+  const { firstName, lastName, email, mobile, message } = req.body;
 
   const msg = {
     to: ['jaybmbendera96@gmail.com', 'jacob@jacobmbendera.com'],
@@ -42,6 +42,7 @@ app.post('/contact', (req, res) => {
         Last Name: ${lastName}<br>
         Email: ${email}<br>
         Phone: ${mobile}<br>
+        Message: ${message}<br>
       `,
   };
 
