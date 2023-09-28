@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import sgMail from '@sendgrid/mail';
+import { validateEmail, validateLength } from './validation.js';
 
 dotenv.config();
 const app = express();
@@ -31,6 +32,30 @@ app.get('/', (req, res) => {
 
 app.post('/contact', (req, res) => {
   const { firstName, lastName, email, mobile, message } = req.body;
+
+  //vaidating email use RegEx
+  if (!validateEmail(email)) {
+    return res.status(400).json({
+      massage: 'Invalid Email',
+    });
+  }
+
+  //validating length for diffent fields
+  if (!validateLength(firstName, 3, 30)) {
+    return res.status(400).json({
+      massage: 'First Name must be between 3 and 30 characters',
+    });
+  }
+  if (!validateLength(lastName, 3, 30)) {
+    return res.status(400).json({
+      massage: 'Last Name must be between 3 and 30 characters',
+    });
+  }
+  if (!validateLength(message, 10, 40)) {
+    return res.status(400).json({
+      massage: 'massage must be between 10 and 40 characters',
+    });
+  }
 
   const msg = {
     to: ['jaybmbendera96@gmail.com', 'jacob@jacobmbendera.com'],
