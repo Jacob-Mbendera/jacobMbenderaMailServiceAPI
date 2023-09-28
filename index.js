@@ -35,24 +35,24 @@ app.post('/contact', (req, res) => {
 
   //vaidating email use RegEx
   if (!validateEmail(email)) {
-    return res.status(400).send({
+    return res.status(400).json({
       massage: 'Invalid Email',
     });
   }
 
   //validating length for diffent fields
   if (!validateLength(firstName, 3, 30)) {
-    return res.status(400).send({
+    return res.status(400).json({
       massage: 'First Name must be between 3 and 30 characters',
     });
   }
   if (!validateLength(lastName, 3, 30)) {
-    return res.status(400).send({
+    return res.status(400).json({
       massage: 'Last Name must be between 3 and 30 characters',
     });
   }
   if (!validateLength(message, 10, 40)) {
-    return res.status(400).send({
+    return res.status(400).json({
       massage: 'massage must be between 10 and 40 characters',
     });
   }
