@@ -10,3 +10,7 @@ export const validateLength = (text, min, max) => {
   }
   return true;
 };
+
+export const validatePhone = (phone) => {
+  return phone.match(/\d/g).length === 10;
+};

@@ -2,7 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import sgMail from '@sendgrid/mail';
-import { validateEmail, validateLength } from './validation.js';
+import { validateEmail, validateLength, validatePhone } from './validation.js';
+import { validate } from 'validate-phone-number-node-js';
 
 dotenv.config();
 const app = express();
@@ -39,7 +40,11 @@ app.post('/contact', (req, res) => {
       massage: 'Invalid Email',
     });
   }
-
+  if (!validate(mobile)) {
+    return res.status(400).json({
+      massage: 'Invalid Phone',
+    });
+  }
   //validating length for diffent fields
   if (!validateLength(firstName, 3, 30)) {
     return res.status(400).json({
