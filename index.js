@@ -65,14 +65,9 @@ app.post('/contact', (req, res) => {
   const msg = {
     to: ['jaybmbendera96@gmail.com', 'jacob@jacobmbendera.com'],
     from: 'jacob@jacobmbendera.com',
-    subject: 'Jacob Mbendera Contact Form ',
+    subject: 'JACOB MBENDERA CONTACT FORM',
     html: `
-        <strong>JACOB MBENDERA CONTACT FORM</strong><br><br>
-        First Name: ${firstName}<br>
-        Last Name: ${lastName}<br>
-        Email: ${email}<br>
-        Phone: ${mobile}<br>
-        Message: ${message}<br>
+    <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CONTACT FORM - JACOB MBENDERA OFFICIAL SITE</title></head><body><div class="" style="max-width:700px;margin-bottom:1em;display:flex;align-items:center;gap:10px;font-family:Roboto;background-color:#fff;padding:1em;border-radius:2px;margin:0 auto;text-align:center"><img src="https://res.cloudinary.com/dhbe6wtod/image/upload/v1696160021/logo_hrfyk9.png" alt="" style="width:50px"><span style="color:#000;text-transform:uppercase;text-align:center;font-size:large;margin:0 auto;font-weight:bolder">CONTACT FORM</span></div><div style="font-family:Roboto;font-size:17px;padding:1em;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;width:700px;margin:0 auto"><span style="font-weight:700;text-align:center">Hello Jacob</span><div style="padding:20px 0"><span style="padding:1.5em 0"><strong>Full Name: ${firstName} ${lastName}</strong><br><strong>Mobile Number: ${mobile}</strong><br><strong>Email Address: ${email}</strong><br></span><p>${message}</p></div><div style="padding-top:20px"><span style="margin:1.5em 0;color:#898f9c">&copy Jacob Mbendera. All right reserved.</span></div></div></body></html>
       `,
   };
 
