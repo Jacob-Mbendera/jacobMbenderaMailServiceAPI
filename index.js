@@ -4,6 +4,9 @@ import cors from 'cors';
 import sgMail from '@sendgrid/mail';
 import { validateEmail, validateLength, validatePhone } from './validation.js';
 import { validate } from 'validate-phone-number-node-js';
+import expressWinston from 'express-winston';
+import { format, transports } from 'winston';
+import { logger } from './logger.js';
 
 dotenv.config();
 const app = express();
@@ -25,11 +28,23 @@ app.use(
   })
 );
 
+app.use(
+  expressWinston.logger({
+    winstonInstance: logger,
+    statusLevels: true,
+  })
+);
 app.get('/', (req, res) => {
   res.json({
     Welcome_to: 'JACOB MBENDERA MAIL SERVICE',
   });
 });
+// app.get('/400', (req, res) => {
+//   res.sendStatus(400);
+// });
+// app.get('/500', (req, res) => {
+//   res.sendStatus(500);
+// });
 
 app.post('/contact', (req, res) => {
   const { firstName, lastName, email, mobile, message } = req.body;
@@ -75,9 +90,11 @@ app.post('/contact', (req, res) => {
     .send(msg)
     .then(() => {
       res.status(200).send('Sent, Jacob will contact you soon');
+      logger.info(msg);
     })
     .catch((error) => {
       res.status(500).send('An Error occured while sending');
+      logger.error(error);
     });
 });
 

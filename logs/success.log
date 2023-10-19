@@ -1,0 +1,153 @@
+{
+  meta: {
+    req: {
+      url: '/contact',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.33.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '47b0428f-1bd3-4ffe-9d74-2014e8866fec',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '141'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/contact',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 5
+  },
+  level: 'warn',
+  message: 'HTTP POST /contact',
+  timestamp: '2023-10-19T16:50:10.128Z'
+}
+{
+  meta: {
+    req: {
+      url: '/contact',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.33.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '9aa4374e-c9cb-43ac-982a-56b0edda7e6a',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '148'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/contact',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 1
+  },
+  level: 'warn',
+  message: 'HTTP POST /contact',
+  timestamp: '2023-10-19T16:50:29.484Z'
+}
+{
+  meta: {
+    req: {
+      url: '/contact',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.33.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '6bb6a586-2d72-49ee-b66c-d2001824f5af',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '152'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/contact',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 2426
+  },
+  level: 'info',
+  message: 'HTTP POST /contact',
+  timestamp: '2023-10-19T16:50:42.516Z'
+}
+{
+  message: {
+    to: [ 'jaybmbendera96@gmail.com', 'jacob@jacobmbendera.com' ],
+    from: 'jacob@jacobmbendera.com',
+    subject: 'JACOB MBENDERA CONTACT FORM',
+    html: '\n' +
+      '    <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CONTACT FORM - JACOB MBENDERA OFFICIAL SITE</title></head><body><div class="" style="max-width:700px;margin-bottom:1em;display:flex;align-items:center;gap:10px;font-family:Roboto;background-color:#fff;padding:1em;border-radius:2px;margin:0 auto;text-align:center"><img src="https://res.cloudinary.com/dhbe6wtod/image/upload/v1696160021/logo_hrfyk9.png" alt="" style="width:50px"><span style="color:#000;text-transform:uppercase;text-align:center;font-size:large;margin:0 auto;font-weight:bolder">CONTACT FORM</span></div><div style="font-family:Roboto;font-size:17px;padding:1em;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;width:700px;margin:0 auto"><span style="font-weight:700;text-align:center">Hello Jacob</span><div style="padding:20px 0"><span style="padding:1.5em 0"><strong>Full Name</strong>: Jacob Mbende<br><strong>Mobile Number</strong>: 265998212216<br><strong>Email Address</strong>: logipid849@alvisani2.co<br></span><p>jacob12312</p></div><div style="padding-top:20px"><span style="margin:1.5em 0;color:#898f9c">&copy; Jacob Mbendera. All right reserved.</span></div></div></body></html>\n' +
+      '      ',
+    isMultiple: false,
+    substitutionWrappers: [ '{{', '}}' ]
+  },
+  level: 'info',
+  timestamp: '2023-10-19T16:50:42.517Z'
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /contact',
+  metadata: {
+    meta: {
+      req: {
+        url: '/contact',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.33.0',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '6ed19570-86c8-437d-b9b4-decafc3d1724',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '142'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/contact',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 4
+    },
+    timestamp: '2023-10-19T16:53:06.760Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /contact',
+  metadata: {
+    meta: {
+      req: {
+        url: '/contact',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.33.0',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'c3389eae-f7e6-43a3-8011-78b97c85b271',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '142'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/contact',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 5
+    },
+    timestamp: '2023-10-19T16:57:42.061Z'
+  }
+}
