@@ -94,7 +94,7 @@ app.post('/contact', (req, res) => {
     })
     .catch((error) => {
       res.status(500).send('An Error occured while sending');
-      logger.error(error);
+      logger.error(msg);
     });
 });
 
