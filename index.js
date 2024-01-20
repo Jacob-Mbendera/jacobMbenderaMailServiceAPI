@@ -111,7 +111,7 @@ app.post('/contactUs', (req, res) => {
 
   const msg = {
     to: ['jaybmbendera96@gmail.com'],
-    from: `${email}`,
+    from: 'jacob@jacobmbendera.com',
     subject: 'HEALIX MEDICAL CONTACT FORM',
     html: `
     <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title style="background-color:#044b63">CONTACT FORM - HEALIX MEDICAL OFFICIAL WEBSITE</title></head><body><div class="" style="max-width:700px;margin-bottom:1em;display:flex;align-items:center;gap:10px;font-family:Roboto;background-color:#044b63;padding:1em;border-radius:2px;margin:0 auto;text-align:center"><img src="https://res.cloudinary.com/dhbe6wtod/image/upload/v1705782886/healix/jzmmzdenz1ye8kuosnjz.png" alt="" style="width:50px"><span style="color:azure;text-transform:uppercase;text-align:center;font-size:large;margin:0 auto;font-weight:bolder">CONTACT FORM</span></div><div style="font-family:Roboto;font-size:17px;padding:1em;border-top:4px solid #fff;border-bottom:4px solid #afafaf;width:700px;margin:0 auto;background-color:#044b63;color:azure"><span style="font-weight:700;text-align:center">Hello</span><div style="padding:20px 0"><span style="padding:1.5em 0"><strong>Full Name</strong>:My name is ${fullName}<br><strong>Mobile Number</strong>: ${mobile}<br><strong>Email Address</strong>: ${email}<br></span><p>${message}</p></div><div style="padding-top:20px"><span style="margin:1.5em 0;color:azure">&copy; Healix Medical. All right reserved.</span></div></div></body></html>
