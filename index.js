@@ -121,10 +121,12 @@ app.post('/contactUs', (req, res) => {
   sgMail
     .send(msg)
     .then(() => {
-      res.status(200).send('Sent!, One of our members will contact you');
+      res
+        .status(200)
+        .json({ message: 'Sent!, One of our members will contact you' });
     })
     .catch((error) => {
-      res.status(500).send('An Error occured while sending');
+      res.status(500).json({ message: 'An Error occured while sending' });
     });
 });
 
