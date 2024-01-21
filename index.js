@@ -110,7 +110,7 @@ app.post('/contactUs', (req, res) => {
   }
 
   const msg = {
-    to: ['jaybmbendera96@gmail.com'],
+    to: ['jaybmbendera96@gmail.com', 'antony@healixmw.tech'],
     from: 'jacob@jacobmbendera.com',
     subject: 'HEALIX MEDICAL CONTACT FORM',
     html: `
