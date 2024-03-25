@@ -105,7 +105,7 @@ app.post('/contactUs', (req, res) => {
   }
   if (!validateLength(message, 20, 40)) {
     return res.status(400).json({
-      massage: 'massage must be between 10 and 40 characters',
+      massage: 'massage must be between 20 and 40 characters',
     });
   }
 
