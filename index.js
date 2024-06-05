@@ -103,9 +103,9 @@ app.post("/contactUs", (req, res) => {
       massage: "Last Name must be between 3 and 30 characters",
     });
   }
-  if (!validateLength(message, 20, 40)) {
+  if (!validateLength(message, 20, 500)) {
     return res.status(400).json({
-      massage: "massage must be between 20 and 40 characters",
+      massage: "massage must be between 20 and 500 characters",
     });
   }
 
