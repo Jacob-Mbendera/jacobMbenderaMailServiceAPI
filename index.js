@@ -92,7 +92,7 @@ app.post("/contactUs", (req, res) => {
       massage: "Invalid Email",
     });
   }
-  if (!validate(mobile)) {
+  if (!validatePhone(mobile)) {
     return res.status(400).json({
       massage: "Invalid Phone",
     });
